@@ -8,10 +8,41 @@
 		<meta name="Copyright" content="Copyright 2024. All rights reserved. Designed & Developed by Tirzah Thuraisingham (2024)">
 		<meta name="Description" content="A website about Sri Lankan Culture">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Biryani:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
-	<body>
+<body>
     <nav>
+			<!-- Off-screen menu -->
+			<div class="off-screen-menu" id="off-screen-menu">
+				<ul class="menu">
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li class="submenu">
+						<a href="#">LEARN ▼</a>
+						<ul class="submenu-content">
+							<li><a href="cuisine.html">CUISINE</a></li>
+							<li><a href="culturalpractices.html">CULTURAL PRACTICES</a></li>
+							<li><a href="festivalsandholidays.html">FESTIVALS & HOLIDAYS</a></li>
+							<li><a href="architecture.html">ARCHITECTURE</a></li>
+							<li><a href="historicalevents.html">HISTORICAL EVENTS</a></li>
+							<li><a href="modernday.html">MODERN DAY</a></li>
+							<li><a href="arts.html">ARTS</a></li>
+							<li><a href="languages.html">LANGUAGES</a></li>
+						</ul>
+					</li>
+					<li><a href="disclaimer.html">CONTACT</a></li>
+				</ul>
+			</div>
+			<!-- Burger menu -->
+			<div class="ham-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+
 			<!-- Main navigation -->
 			<div class="main-nav">
 				<ul>
@@ -37,10 +68,50 @@
 
     <div class="container">
         <div class="vertical-container">
-            <div id="slide1" class="slide slide1"></div>
-            <div id="slide2" class="slide slide2"></div>
-            <div id="slide3" class="slide slide3"></div>
+            <div id="slide1" class="slide slide1">
+                <div class="title-container">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <h1>CUISINE</h1>
+                    <br>
+                    <button id="down-button" class="down-button" style="background-color:transparent; font-size:150px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="200px" viewBox="0 -960 960 960" width="200px" fill="#FFFFFF">
+                            <path d="M480-344 240-584l43-43 197 197 197-197 43 43-240 240Z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div id="slide2" class="slide slide2">
+                <div class="box-container">
+                    <div class="section2">
+					<p>Sri Lankan Tamil cuisine is renowned for its rich and diverse flavors, featuring dishes that reflect the community’s 
+					cultural heritage. Staples such as dosa, idli, and sambar are central to Tamil meals, known for their distinctive spices 
+					and use of ingredients like curry leaves, mustard seeds, and tamarind. Tamil culinary traditions are celebrated for 
+					their intricate preparation methods and vibrant flavors, creating dishes that are both delicious and nourishing. 
+					Festivals like Thai Pongal highlight this cuisine, showcasing traditional foods prepared to mark special occasions and 
+					honor agricultural traditions.</p>
+					</div>
+                    <div class="section1"></div>
+                </div>
+            </div>
+
+            <div id="slide3" class="slide slide3">
+                <div class="box-container">
+                    <div class="section1"></div>
+                    <div class="section2">
+					<p>Additionally, Tamil street food offers a delightful array of options that contribute to the vibrant culinary landscape. 
+					From crispy vadas to spicy pani puri, these snacks are enjoyed across communities and provide a glimpse into the everyday 
+					tastes of Sri Lankan Tamils. The emphasis on fresh, locally-sourced ingredients and the use of traditional cooking 
+					techniques reflect a deep connection to cultural practices and regional flavors, celebrating Tamil culinary artistry in 
+					both daily life and festive celebrations.</p>
+					</div>
+					</div>
+					<footer>Copyright 2024. All rights reserved. Designed & Developed by Tirzah Thuraisingham (2024)</footer>
+				</div>
 			</div>
 		</div>
+		<script src="js/script.js"></script>
 	</body>
 </html>
