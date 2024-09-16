@@ -8,13 +8,33 @@
 		<meta name="Copyright" content="Copyright 2024. All rights reserved. Designed & Developed by Tirzah Thuraisingham (2024)">
 		<meta name="Description" content="A website about Sri Lankan Culture">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="images/favicon1.png" type="image/png">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Biryani:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
 		<style>
-
+			a {
+				color: #01534f;
+			}
+			a:visited {
+				color: #01534f;
+			}
+			a:hover {
+				color: #01534f;
+			}
 
 			body {
+				font-family: "Biryani", sans-serif;
+				display: flex;
+				justify-content: center;
+				align-items: center;
 				height: 100vh;
-				background-color: grey;
+				background-color: #f2f2f2;
 				margin: 0;
+			}
+
+			body:hover {
+				background: linear-gradient(#01534f, #eb7400);
 			}
 
 			.container {
@@ -23,16 +43,51 @@
 
 			.message-box {
 				background-color: white;
+				border: 2px solid #000000;
+				border-radius: 8px;
+				padding: 20px;
+				box-shadow: 0 0 10px rgba(0,0,0,0.1);
 				max-width: 600px;
 				margin: 0 auto;
+			}
+
+			h1 {
+				color: black;
+			}
+
+			p {
+				font-size: 1.1rem;
+				color: black;
+			}
+
+			.home-button {
+				display: inline-block;
+				padding: 10px 20px;
+				font-size: 1rem;
+				font-weight: bold;
+				border-radius: 30px;
+				border: 2px solid black;
+				background-color: transparent;
+				color: black;
+				text-decoration: none;
+				margin-top: 20px;
+				transition: background-color 0.3s ease;
+			}
+
+			.home-button:hover {
+				background: linear-gradient(#013d3a, #255843);
+				color: white;
+				font-weight: bold;
 			}
 		</style>
 	</head>
 	<body>
 		<div class="container">
 			<div class="message-box">
-				<h1></h1>
-				<p></p>
+				<h1>Sorry!</h1>
+				<p>Sorry! The contact page of our website is under maintenance at the moment, so you won't be 
+					able to fill out a contact form ☹. However, you can contact us here 
+					<a href="mailto:0tthuraisingham@tawacollege.school.nz">0tthuraisingham@tawacollege.school.nz</a> and we will get back to you as soon as we can!</p>
 				<a href="index.html" class="home-button">Back to Home</a>
 			</div>
 		</div>
