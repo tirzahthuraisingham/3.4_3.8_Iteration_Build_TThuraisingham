@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -10,10 +8,41 @@
 		<meta name="Copyright" content="Copyright 2024. All rights reserved. Designed & Developed by Tirzah Thuraisingham (2024)">
 		<meta name="Description" content="A website about Sri Lankan Culture">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Biryani:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-    <nav>
+		<nav>
+			<!-- Off-screen menu -->
+			<div class="off-screen-menu" id="off-screen-menu">
+				<ul class="menu">
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li class="submenu">
+						<a href="#">LEARN ▼</a>
+						<ul class="submenu-content">
+							<li><a href="cuisine.html">CUISINE</a></li>
+							<li><a href="culturalpractices.html">CULTURAL PRACTICES</a></li>
+							<li><a href="festivalsandholidays.html">FESTIVALS & HOLIDAYS</a></li>
+							<li><a href="architecture.html">ARCHITECTURE</a></li>
+							<li><a href="historicalevents.html">HISTORICAL EVENTS</a></li>
+							<li><a href="modernday.html">MODERN DAY</a></li>
+							<li><a href="arts.html">ARTS</a></li>
+							<li><a href="languages.html">LANGUAGES</a></li>
+						</ul>
+					</li>
+					<li><a href="disclaimer.html">CONTACT</a></li>
+				</ul>
+			</div>
+			<!-- Burger menu -->
+			<div class="ham-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+
 			<!-- Main navigation -->
 			<div class="main-nav">
 				<ul>
@@ -37,12 +66,51 @@
 			</div>
 		</nav>
 
-    <div class="container">
-        <div class="vertical-container">
-            <div id="slide1" class="slide slide1"></div>
-            <div id="slide2" class="slide slide2"></div>
-            <div id="slide3" class="slide slide3"></div>
+		<div class="container">
+			<div class="vertical-container">
+				<div id="slide1" class="slide slide1">
+					<div class="title-container">
+						<br>
+						<br>
+						<br>
+						<br>
+						<h1>HISTORICAL EVENTS</h1>
+						<br>
+						<button id="down-button" class="down-button" style="background-color:transparent; font-size:150px;">
+							<svg xmlns="http://www.w3.org/2000/svg" height="200px" viewBox="0 -960 960 960" width="200px" fill="#FFFFFF">
+								<path d="M480-344 240-584l43-43 197 197 197-197 43 43-240 240Z"/>
+							</svg>
+						</button>
+					</div>
+				</div>
+				<div id="slide2" class="slide slide2">
+					<div class="box-container">
+						<div class="section2">
+							<p>Sri Lankan Tamils have played a significant role in shaping the country’s history through their resilience 
+							and contributions. The Tamil community’s efforts in advocating for their rights and cultural preservation have 
+							led to significant social and political advancements. Historical milestones, such as the establishment of Tamil 
+							schools and cultural organizations, reflect the community’s commitment to education and cultural preservation, 
+							contributing to the broader national narrative of Sri Lanka.</p>
+						</div>
+						<div class="section1"></div>
+					</div>
+				</div>
+
+				<div id="slide3" class="slide slide3">
+					<div class="box-container">
+						<div class="section1"></div>
+						<div class="section2">
+							<p>In recent history, the Tamil community’s focus on reconciliation and development has been instrumental in 
+							promoting peace and unity. Efforts to address past grievances and foster dialogue between different ethnic groups 
+							highlight the Tamil people’s dedication to building a harmonious society. These initiatives demonstrate the positive 
+							impact of the Tamil community on Sri Lanka’s socio-political landscape, working towards a future of inclusivity 
+							and mutual respect.</p>
+							</div>
+					</div>
+					<footer>Copyright 2024. All rights reserved. Designed & Developed by Tirzah Thuraisingham (2024)</footer>
+				</div>
 			</div>
 		</div>
+		<script src="js/script.js"></script>
 	</body>
 </html>
